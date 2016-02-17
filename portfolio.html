@@ -4,15 +4,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Daniel Frank: Portfolio</title>
+	<title>Daniel Frank: Web Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Russo+One|Cantata+One' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<nav class="top-nav">
-		<section class="content">
+	<header class="head">
+		<div class="content">
+			<h1>Daniel Frank</h1>
+			<h2>Web Designer</h2>
+			<h1 class="headname">Portfolio</h1>
+		</div>
+		<div class="row">
+			<div class=".col-sm-9">
 			<ul class="links">
 				<li>
 					<a href="index.html">Home</a>
@@ -27,18 +35,57 @@
 					<a href="blog.html">Blog</a>
 				</li>
 			</ul>
+			</div>
+			<div class=".col-sm-3">
 			<ul class="icons">
 				<li class="github">
-					<a href="https://github.com/chryses46"><i class="fa fa-github"></i></a>
+					<a href="https://github.com/chryses46" target="blank"><i class="fa fa-github"></i></a>
 				</li>
 				<li class="linkedin">
-					<a href="https://www.linkedin.com/in/daniel-frank-598b9960"><i class="fa fa-linkedin-square"></i></a>
+					<a href="https://www.linkedin.com/in/daniel-frank-598b9960" target="blank"><i class="fa fa-linkedin-square"></i></a>
 				</li>
 				<li class="envelope">
-					<a href="mailto:danjfrank08@gmail.com"><i class="fa fa-envelope-o"></i></a>
+					<a href="mailto:danjfrank08@gmail.com" target="blank"><i class="fa fa-envelope-o"></i></a>
 				</li>
 			</ul>
+			<div>
+		</div>
+	</header>
+	<section class="portfolio">
+		<section style="height: 70em;">
+			<h1>New York Times "Hack" Project</h1>
+			<p>A project to help grow the skills of various browser dev tools. This project was completed with <a href="https://developers.google.com/web/tools/chrome-devtools/?hl=en" target="_blank">Google Developer Tools</a>. I didn't change much CSS at all. I did replace all text and pictures. I did not change any of the columns or borders.</p>
+			<div class="portfoliodiv">
+				<img class="portfolio.content" src="img/Moo York Times.png" height="729px">
+			</div>
 		</section>
-	</nav>
+		<section style="height: 70em;">
+			<h1>About Me Page</h1>
+			<p>A project to test knowledge over basic HTML layout and CSS. All CSS is custom and utilizes Bootstrap for layout. This project focused on creating a clean nav bar, header and main secion as well as footer. The center section utilizes Bootstrap row and column layout for clean responsive web design. The iframe to the right is sized to represent an iPhone 6S screen set at 375p x 627p. You can view the HTML and CSS of this project on my <a href="https://github.com/chryses46/aboutme">GitHub page</a>.</p>
+			<iframe src="http://chryses46.github.io/aboutme/" width="375px" height="627px"></iframe>
+		</section>
+		<section style="height: 58em;">
+			<h1>Karma Clone</h1>
+			<p>A challenge project to recreate a website's layout. I utilized similar HTML and CSS for this page clone. The point here was to teach the various ways you can layout a page, to include icons and buttons. </p>
+			<iframe src="https://chryses46.github.io/LandingPageClone" width="375px" height="627px"></iframe>
+		</section>
+	</section>
+	<footer class="lower-nav">
+		<p><strong>Please feel free to <a href="about.html">contact me</a> at any of the links below.</strong></p>
+		<div>
+			<ul class="icons">
+				<li class="github">
+					<a href="https://github.com/chryses46" target="blank"><i class="fa fa-github"></i></a>
+				</li>
+				<li class="linkedin">
+					<a href="https://www.linkedin.com/in/daniel-frank-598b9960" target="blank"><i class="fa fa-linkedin-square"></i></a>
+				</li>
+				<li class="envelope">
+					<a href="mailto:danjfrank08@gmail.com" target="blank"><i class="fa fa-envelope-o"></i></a>
+				</li>
+			</ul>
+		</div>
+		<p><strong>Header image provided by <a href="www.unsplash.com">Unsplash.com</a></strong></p>
+	</footer>
 </body>
 </html>

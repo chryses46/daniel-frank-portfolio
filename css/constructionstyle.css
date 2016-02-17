@@ -1,0 +1,108 @@
+/* Daniel Frank's Portfolio - CSS @Daniel Frank 2016 */
+
+html {
+	box-sizing: border-box;
+}
+
+.top-nav {
+	/*position: fixed;*/
+	background-color: rgb(85, 111, 112);
+	width: 100%;
+	z-index: 9999;
+}
+
+.content {
+	border: solid 1px chocolate;;
+	margin: 0 auto;
+	height: 5em;
+	padding: 0 5em;
+	font-family: "Cantata One", sans-serif;
+	font-weight: 400;
+}
+
+.top-nav .links {
+	width: 45em;
+}
+
+.top-nav .links a {
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 20px;
+	color: white;
+	letter-spacing: .1em;
+}
+
+.top-nav .links a:hover {
+	color: #000000;
+}
+
+.top-nav .links a:visited {
+	color: #ffffff;
+}
+
+.top-nav .links a:active {
+	color: gray;
+	text-decoration: underline;
+
+}
+
+.top-nav .links li {
+	display: inline-block;
+	float: left;
+	padding: 1em;
+}
+
+.top-nav .icons {
+	margin-bottom: 3em;
+}
+.top-nav .icons li {
+	border-radius: 1.25rem;
+	width: 2.5rem;
+	height: 1rem;
+	display: inline-block;
+	margin: .5rem;
+	padding: 0.625rem 0;
+	text-align: center;
+	float: right;
+}
+
+.fa {
+	display: inline-block;
+	font: normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto
+	-webkit-font-smoothing: antialiased;
+}
+
+.envelope a {
+	color: #ff0000;
+}
+
+.linkedin a {
+	color: rgb(2, 114, 176);
+}
+
+.github a {
+	color: #000000;
+}
+
+.head .content {
+	height: 20em;
+	background-image: url("../img/headerimg.jpg");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+	letter-spacing: .1em;
+	text-align: left;
+}
+
+.head .content h2 {
+	margin-left: 12rem;
+	margin-top: -.75em;
+}
+
+.header {
+	text-align: center;
+	
+}

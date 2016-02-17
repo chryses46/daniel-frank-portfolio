@@ -1,66 +1,99 @@
 /* Daniel Frank's Portfolio - CSS @Daniel Frank 2016 */
 
-.top-nav {
-	position: fixed;
-	background-color: #ffffff;
-	width: 100%;
-	z-index: 9999;
+html {
+	box-sizing: border-box;
 }
+
+body {
+	padding: 0;
+	background-color: rgb(85, 111, 112);
+	font-family: "Cantata One", sans-serif;
+}
+
+h1 {
+	margin: 0;
+}
+
+.head {
+	height: 15em;
+	background-image: url("../img/headerimg.jpg");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Cantata One", sans-serif;
+}
+
+.head .content {
+	color: #ffffff;
+	letter-spacing: .25em;
+	text-align: left;
+}
+
+.head .content h1 {
+	margin-bottom: 1em;
+}
+
 
 .content {
-	border: solid 1px chocolate;
+	border: 0;
 	margin: 0 auto;
-	height: 5em;
-	padding: 0 5em;
+	height: 10em;
+	padding: 3em 5em 0 18em;
 	font-family: "Cantata One", sans-serif;
 	font-weight: 400;
-
 }
 
-.top-nav .links {
-	width: 45em;
+.head .content h2 {
+	margin-left: 12rem;
+	margin-top: -.75em;
 }
 
-.top-nav .links a {
+.head .row {
+	margin: 0;
+}
+
+.head .row .links {
+	margin-left: 94em;
+}
+
+.head .row .links a {
 	text-decoration: none;
-	font-weight: 300;
+	font-weight: 700;
 	font-size: 20px;
+	color: white;
+	letter-spacing: .1em;
+}
+
+.head .row .links a:hover {
 	color: #000000;
 }
 
-.top-nav .links a:hover {
-	color: #808080;
+.head .row .links a:visited {
+	color: #ffffff;
 }
 
-.top-nav .links a:visited {
-	color: #000080;
-}
-
-.top-nav .links a:active {
+.head .row a:active {
 	color: gray;
 	text-decoration: underline;
 
 }
 
-.top-nav .links li {
+.head .row .links li {
 	display: inline-block;
 	float: left;
 	padding: 1em;
+}
 
+.head .row .icons {
+	float: right;
+ 	margin: 0;
 
 }
 
-
-.top-nav .icons li {
-	border-radius: 1.25rem;
-	width: 2.5rem;
-	height: 1rem;
-	display: inline-block;
-	margin: .5rem;
-	border: 1px solid #eaebec;
-	padding: 0.625rem 0;
+.head .row .icons li {
 	text-align: center;
-	float: right;
+	margin-right: 4em;
+	list-style: none;
 }
 
 .fa {
@@ -75,10 +108,132 @@
 	color: #ff0000;
 }
 
+
 .linkedin a {
 	color: rgb(2, 114, 176);
 }
 
 .github a {
-	color: #000000;
+	color: #ffffff;
+}
+
+hr {
+	color: black;
+}
+
+.intro {
+	font-family: "Cantata One", sans-serif;
+	font-weight: 400;
+	height: 7em;
+	background-color: #fff;
+	padding: 0 2em;
+}
+
+.introtable {
+	height: 40em;
+	background-color: #fff;
+
+}
+.display {
+	position: relative;
+	max-width: 495px;
+	height: 370px;
+	margin: 5em 4em .5em 5em;
+
+}
+
+.display figure{
+	margin: 0;
+	max-width: 495px;
+	height: 370px;
+	background: #000;
+	border-radius: 4em;
+	/*position: absolute;*/
+}
+
+.display img {
+	box-shadow: 0 0 2px #666;
+	border-radius: 4em;
+}
+
+.display figcaption{
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	background: #000;
+	font-size: .8em;
+	padding: 8px 12px;
+	opacity: 0;
+	transition: opacity 0s;
+	border-radius: 0 0 4em 4em;
+	text-align: center;
+}
+
+.display:hover figure figcaption{
+	transition: opacity .5s;
+	opacity: 1;
+}
+
+.display-attr//
+
+.display figure {
+	opacity: 0;
+}
+
+.lower-nav {
+	text-align: center;
+	background-color: rgb(85, 111, 112);
+	height: 8rem;
+	width: 100%;
+	font-family: "Cantata One", sans-serif;
+}
+
+.lower-nav .social {
+	margin-top: .5em;
+	color: #000;
+}
+
+
+
+.lower-nav p {
+	font-size: 11px;
+}
+
+.lower-nav .icons li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 3em;
+}
+
+
+
+/* Secondary pages header name */
+.headname {
+	height: 4em;
+	text-align: center;
+}
+
+/* Portfolio Content */
+
+
+.portfolio {
+	height: 200em;
+}
+
+.head .content .portfolio {
+	margin:0;
+	text-align: center;
+
+}
+.portfoliodiv {
+	float: right;
+}
+
+.portfolio.content {
+	text-align: left;
+
+}
+
+.portfolio iframe {
+	float: right;
 }
